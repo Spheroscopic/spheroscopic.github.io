@@ -1,0 +1,256 @@
+body {
+    background-color: #02131B;
+    font-family: 'Poppins', sans-serif !important;
+    height:100vh;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+}
+
+.app-img {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.app-img > img {
+    width: 128px;
+    height: auto;
+}
+
+.app-name {
+    display: flex;
+    justify-content: center;
+    color: #E6F4FD;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    align-items: center;
+}
+
+.button {
+    padding: 0.8rem 1.7rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #141414;
+    background-color: #78CAF4;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #5dafd8;
+    transition: all 0.2s ease-in-out;
+}
+
+.preview {
+
+    padding: 2vw 5vw 2vw 5vw;
+}
+
+.preview-img {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.preview-img>img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.preview-text-h1 {
+    font-size: calc(20px + 1.1vw) !important;
+    color: #E6F4FD;
+    font-weight: 700;
+}
+
+.preview-features {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.feature {
+    width: 20vw;
+}
+
+.feature-h1 {
+    font-size: calc(10px + 0.8vw) !important;
+    color: #E6F4FD;
+    font-weight: 600;
+}
+
+.feature-p {
+    font-size: calc(10px + 0.35vw) !important;
+    color: #E6F4FD;
+    font-weight: 400;
+}
+
+.feature-p-padding {
+    padding-left: 2rem;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.footer {
+    position: relative;
+    max-width: 100%;
+    margin-top: 5.5rem;
+    border-top: 1px solid hsla(0, 0%, 100%, .08);
+    background-color: #0e1e27;
+}
+
+.footer-problem {
+    height: 40%;
+}
+
+
+.footer-name {
+    display: flex;
+    align-items: center;
+    color: #8a8f98;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-name svg {
+    fill: #eff0f2;
+    margin-right: 1%;
+}
+
+
+.fqyXPs {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+.fqyXPs p {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8a8f98;
+    margin-right: 0.5%;
+}
+
+.fqyXPs a {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8a8f98 !important;
+    transition: all 0.2s ease-in-out;
+
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.privacy-policy-href {
+    margin-top: 2%;
+}
+
+.creator-href {
+    margin-top: 1%;
+}
+
+.fqyXPs:hover a {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #eceff3 !important;
+    transition: all 0.2s ease-in-out;
+
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.privacy-policy {
+    max-width: 80%;
+}
+
+.privacy-policy > p {
+    font-size: calc(6px + 0.5vw);
+    text-align: left;
+    color: #141414;
+    line-height: 1.5;
+}
+
+.privacy-policy-section {
+    padding-bottom: 2rem;
+}
+
+/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+
+@media(max-width: 1600px) {
+    .preview-text-h1 {
+        font-size: calc(20px + 0.9vw) !important;
+        color: #E6F4FD;
+        font-weight: 700;
+    }
+
+    .feature {
+        width: 35vw;
+    }
+
+    .feature-h1 {
+        font-size: calc(10px + 0.8vw) !important;
+        color: #E6F4FD;
+        font-weight: 600;
+    }
+
+    .feature-p {
+        font-size: calc(10px + 0.35vw) !important;
+        color: #E6F4FD;
+        font-weight: 400;
+    }
+}
+
+@media(max-width: 990px) {
+    .preview-text-h1 {
+        font-size: calc(20px + 1.5vw) !important;
+        color: #E6F4FD;
+        font-weight: 700;
+    }
+
+    .preview-text-div {
+        margin-top: 2rem;
+    }
+
+    .feature {
+        width: 60vw;
+    }
+
+    .feature-h1 {
+        font-size: calc(10px + 1.4vw) !important;
+        color: #E6F4FD;
+        font-weight: 600;
+    }
+
+    .feature-p {
+        font-size: calc(10px + 0.7vw) !important;
+        color: #E6F4FD;
+        font-weight: 400;
+    }
+}
