@@ -8,53 +8,83 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
     <link href="assets/css/index.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/img/Logo-512.png">
 </head>
 
 <body>
-    <section class="container app">
-        <div class="row justify-content-center">
-            <div class="col-12 app-img">
-                <a class="app-img" href="index.html">
-                    <img src="assets/img/Logo-512.png">
-                </a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="app-name" href="/">
+                <img src="assets/img/Logo-512.png" alt="Spheroscopic" width="36" height="36">
+                Spheroscopic
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item fqyXPs">
+                        <a target="_blank" href="https://github.com/Spheroscopic/Spheroscopic">
+                            Github
+                            <svg width="10" height="10" viewBox="0 0 10 9">
+                                <path
+                                    d="M9.125 0.671875V6.76562C9.125 7.12109 8.8457 7.375 8.51562 7.375C8.16016 7.375 7.90625 7.12109 7.90625 6.76562V2.14453L2.04102 8.00977C1.91406 8.13672 1.76172 8.1875 1.60938 8.1875C1.43164 8.1875 1.2793 8.13672 1.17773 8.00977C0.923828 7.78125 0.923828 7.40039 1.17773 7.17188L7.04297 1.28125H2.42188C2.06641 1.28125 1.8125 1.02734 1.8125 0.671875C1.8125 0.341797 2.06641 0.0625 2.42188 0.0625H8.51562C8.8457 0.0625 9.125 0.341797 9.125 0.671875Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item fqyXPs">
+                        <a href="privacy-policy.html">
+                            Privacy policy
+                        </a>
+                    </li>
+                    <li class="nav-item fqyXPs">
+                        <a href="terms-of-use.html">
+                            Terms of use
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
+
     <section>
-        <div class="container container-about-app">
-            <div class="section-about-app privacy-policy-section">
-                <div class="row justify-content-center">
-                    <div class="col-12 mt-5 feature-p privacy-policy">
-                        <h1>Spheroscopic Privacy Policy</h1>
-                        <div class="mt-4">
-                            <h4>General</h4>
-                            <p>
-                                Spheroscopic only logs anonymized analytics to bring us ability of debuging the app. The
-                                bug report only sends device os, app version, user's time zone, app's screen resolution,
-                                and some information about app. And no personal data is included.
-                            </p>
-                        </div>
-                        <div class="changes">
-                            <h4>Changes to This Policy</h4>
-                            <p>
-                                You are advised to review this policy periodically for any changes. By using the
-                                Spheroscopic app, you agree to the collection and use of information in accordance with
-                                this policy.
-                            </p>
-                        </div>
+        <div class="container">
+            <div class="row app">
+                <div class="col-12 mt-5 privacy-policy">
+                    <h1 class="preview-text-h1 align-items-center text-center">Spheroscopic Privacy Policy</h1>
+                    <div class="mt-5">
+                        <h4 class="feature-h4">General</h4>
+                        <p class="feature-p">
+                            Spheroscopic only logs anonymized analytics to bring us ability of debuging the app. The
+                            bug report only sends device os, app version, user's time zone, app's screen resolution,
+                            and some information about app. And no personal data is included.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="feature-h4">Changes to This Policy</h4>
+                        <p class="feature-p">
+                            You are advised to review this policy periodically for any changes. By using the
+                            Spheroscopic app, you agree to the collection and use of information in accordance with
+                            this policy.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer footer-problem">
+
+    <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 p-5">
@@ -104,40 +134,44 @@
                                 Spheroscopic
                             </a>
                         </div>
-                        <div class="col-12 fqyXPs privacy-policy-href">
+                        <div class="col-12 fqyXPs mt-4">
+                            <a target="_blank" href="https://github.com/Spheroscopic/Spheroscopic">
+                                Github
+                                <svg width="10" height="10" viewBox="0 0 10 9">
+                                    <path
+                                        d="M9.125 0.671875V6.76562C9.125 7.12109 8.8457 7.375 8.51562 7.375C8.16016 7.375 7.90625 7.12109 7.90625 6.76562V2.14453L2.04102 8.00977C1.91406 8.13672 1.76172 8.1875 1.60938 8.1875C1.43164 8.1875 1.2793 8.13672 1.17773 8.00977C0.923828 7.78125 0.923828 7.40039 1.17773 7.17188L7.04297 1.28125H2.42188C2.06641 1.28125 1.8125 1.02734 1.8125 0.671875C1.8125 0.341797 2.06641 0.0625 2.42188 0.0625H8.51562C8.8457 0.0625 9.125 0.341797 9.125 0.671875Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-12 fqyXPs mt-3">
                             <a href="privacy-policy.html">
                                 Privacy policy
-                                <svg width="10" height="10" viewBox="0 0 10 9">
-                                    <path
-                                        d="M9.125 0.671875V6.76562C9.125 7.12109 8.8457 7.375 8.51562 7.375C8.16016 7.375 7.90625 7.12109 7.90625 6.76562V2.14453L2.04102 8.00977C1.91406 8.13672 1.76172 8.1875 1.60938 8.1875C1.43164 8.1875 1.2793 8.13672 1.17773 8.00977C0.923828 7.78125 0.923828 7.40039 1.17773 7.17188L7.04297 1.28125H2.42188C2.06641 1.28125 1.8125 1.02734 1.8125 0.671875C1.8125 0.341797 2.06641 0.0625 2.42188 0.0625H8.51562C8.8457 0.0625 9.125 0.341797 9.125 0.671875Z"
-                                        fill="currentColor"></path>
-                                </svg>
                             </a>
                         </div>
-                        <div class="col-12 fqyXPs ">
+                        <div class="col-12 fqyXPs">
                             <a href="terms-of-use.html">
                                 Terms of use
-                                <svg width="10" height="10" viewBox="0 0 10 9">
-                                    <path
-                                        d="M9.125 0.671875V6.76562C9.125 7.12109 8.8457 7.375 8.51562 7.375C8.16016 7.375 7.90625 7.12109 7.90625 6.76562V2.14453L2.04102 8.00977C1.91406 8.13672 1.76172 8.1875 1.60938 8.1875C1.43164 8.1875 1.2793 8.13672 1.17773 8.00977C0.923828 7.78125 0.923828 7.40039 1.17773 7.17188L7.04297 1.28125H2.42188C2.06641 1.28125 1.8125 1.02734 1.8125 0.671875C1.8125 0.341797 2.06641 0.0625 2.42188 0.0625H8.51562C8.8457 0.0625 9.125 0.341797 9.125 0.671875Z"
-                                        fill="currentColor"></path>
-                                </svg>
                             </a>
                         </div>
-                        <div class="col-12 fqyXPs privacy-policy-href">
-                            <a href="mailto:followphoto.co@gmail.com?subject=Spheroscopic feedback">
-                                followphoto.co@gmail.com
-                                <svg width="10" height="10" viewBox="0 0 10 9">
-                                    <path
-                                        d="M9.125 0.671875V6.76562C9.125 7.12109 8.8457 7.375 8.51562 7.375C8.16016 7.375 7.90625 7.12109 7.90625 6.76562V2.14453L2.04102 8.00977C1.91406 8.13672 1.76172 8.1875 1.60938 8.1875C1.43164 8.1875 1.2793 8.13672 1.17773 8.00977C0.923828 7.78125 0.923828 7.40039 1.17773 7.17188L7.04297 1.28125H2.42188C2.06641 1.28125 1.8125 1.02734 1.8125 0.671875C1.8125 0.341797 2.06641 0.0625 2.42188 0.0625H8.51562C8.8457 0.0625 9.125 0.341797 9.125 0.671875Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="col-12 fqyXPs creator-href">
+                        <div class="col-12 fqyXPs mt-3">
                             <p>
-                                Designed and developed by <a href="https://github.com/execOQ/">
+                                Designed and developed by
+                                <a href="https://github.com/execOQ/">
                                     consequential
+                                    <svg width="10" height="10" viewBox="0 0 10 9">
+                                        <path
+                                            d="M9.125 0.671875V6.76562C9.125 7.12109 8.8457 7.375 8.51562 7.375C8.16016 7.375 7.90625 7.12109 7.90625 6.76562V2.14453L2.04102 8.00977C1.91406 8.13672 1.76172 8.1875 1.60938 8.1875C1.43164 8.1875 1.2793 8.13672 1.17773 8.00977C0.923828 7.78125 0.923828 7.40039 1.17773 7.17188L7.04297 1.28125H2.42188C2.06641 1.28125 1.8125 1.02734 1.8125 0.671875C1.8125 0.341797 2.06641 0.0625 2.42188 0.0625H8.51562C8.8457 0.0625 9.125 0.341797 9.125 0.671875Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-12 fqyXPs">
+                            <p>
+                                Contribute website on
+                                <a href="https://github.com/Spheroscopic/spheroscopic.github.io">
+                                    Github
                                     <svg width="10" height="10" viewBox="0 0 10 9">
                                         <path
                                             d="M9.125 0.671875V6.76562C9.125 7.12109 8.8457 7.375 8.51562 7.375C8.16016 7.375 7.90625 7.12109 7.90625 6.76562V2.14453L2.04102 8.00977C1.91406 8.13672 1.76172 8.1875 1.60938 8.1875C1.43164 8.1875 1.2793 8.13672 1.17773 8.00977C0.923828 7.78125 0.923828 7.40039 1.17773 7.17188L7.04297 1.28125H2.42188C2.06641 1.28125 1.8125 1.02734 1.8125 0.671875C1.8125 0.341797 2.06641 0.0625 2.42188 0.0625H8.51562C8.8457 0.0625 9.125 0.341797 9.125 0.671875Z"
@@ -152,4 +186,5 @@
         </div>
     </footer>
 </body>
+
 </html>
